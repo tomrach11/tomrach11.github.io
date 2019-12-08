@@ -3,7 +3,7 @@ body {
   background-color: #FBF9F8;
   font-family: arial, helvetica, sans-serif;
   color: #808080;
-  max-width: 900px;
+  max-width: 950px;
   margin: 0 auto;
 }
 header, footer {
@@ -23,14 +23,47 @@ nav {
 }
 /* End Editting Main Elements */
 
-/* Start Editting Picture */
-article img {
+/* Start Editting nav */
+nav a {
+  background: #34ADD5;
+  color: #FBF9F8;
+  padding: 8px;
+  border: thin solid #FBF9F8;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  margin: 20px;
+  width: 100px;
   float: left;
 }
-.clear-float {
+nav a:visited {
+  color: #FBF9F8;
+}
+nav a:hover {
+  background-color: #A3E2E5;
+  color: #808080;
+}
+nav a:active {
+  font-weight: bold;
+}
+/* End Editting nav */
+
+/* Start Editting Article */
+article {
+  margin-bottom: 16px;
+}
+article img {
+  float: left;
+  width: 350px;
+  margin-right: 20px;
+}
+.clearFloat {
   clear: both;
 }
-/* End Editting Picture*/
+.rightContent {
+  float:left;
+}
+/* End Editting Article*/
 
 /*   Start Editting Tabel    */
 caption {
