@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Bubblegum+Sans|Fredericka+the+Great|Noto+Sans+JP&display=swap');
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  background-color: #EFC69B;
+}
+header, footer{
+  background-color: #CCB69B;
+  padding: 30px;
+  border-top: 2px solid #AF1B3F;
+}
+h1 {
+  font-size: 5em;
+}
+nav {
+  background-color: #473144;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  border-color: #AF1B3F;
+}
+nav a {
+  border: 2px solid #AF1B3F;
+  color: #AF1B3F;
+  margin: 10px;
+}
+nav a:hover {
+  background-color: #AF1B3F;
+  color: #473144;
+  border-color: black;
+}
+nav a:visited {
+  color: black;
+  background-color: blue;
+}
+nav a:active {
+  text-decoration: underline;
+}
+
+
+
+
+th {
+  font-size: 1.5em;
+  text-align: center;
+}
+h1, th {
+  font-family: 'Bubblegum Sans', cursive;
+}
+.require {
+  font-weight: bold;
+}
+nav a {
+
+}
