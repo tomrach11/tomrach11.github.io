@@ -9,6 +9,13 @@ header, footer{
   padding: 30px;
   border-top: 2px solid #AF1B3F;
 }
+#description{
+  text-align: left;
+  max-width: 600px;
+}
+footer {
+  margin-top: 50px;
+}
 h1 {
   font-size: 5em;
 }
@@ -26,7 +33,15 @@ nav {
 .btn {
   width: 120px;
 }
+nav .bnt:active {
+  text-decoration: underline;
+}
+nav .btn:visited {
+  color: black;
+  /* background-color: blue; */
+}
 nav .btn {
+  background-color: #473144;
   font-size: 1.5em;
   border: 2px solid #AF1B3F;
   color: #AF1B3F;
@@ -36,13 +51,6 @@ nav .btn:hover {
   background-color: #AF1B3F;
   color: #473144;
   border: 2px solid black;
-}
-nav .btn:visited {
-  color: black;
-  background-color: blue;
-}
-nav a:active {
-  text-decoration: underline;
 }
 /* End nav */
 /* Start Menu */
@@ -55,3 +63,19 @@ nav a:active {
   margin-bottom: 10px;
 }
 /* End Menu */
+/* Start Form */
+.form {
+  max-width: 600px;
+  margin: 20px;
+}
+form div {
+  margin-bottom: 10px;
+}
+textarea {
+  /* width: 300px; */
+  height: 100px;
+}
+form label{
+  text-align: right;
+}
+/* End Form */
