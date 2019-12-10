@@ -7,19 +7,23 @@
     <title>Home Page</title>
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="main.css" rel="stylesheet" type="text/css" />
+    <style>
+      .require {
+        font-weight: bold;
+      }
+    </style>
   </head>
-  <body style="background-color:lightsalmon;"><center>
-    <Header>
-      <h1>Restaurant Name</h1>
-
+  <body><center>
+    <header>
+      <h1>Anime Curry</h1>
     </header>
-    <hr>
+
     <nav>
-      <a href="index.html">Home</a>&nbsp&nbsp&nbsp
-      <a href="menu.html">Menu</a>&nbsp&nbsp&nbsp
-      <a href="contact.html">Contact Us</a>&nbsp&nbsp&nbsp
+      <a class="btn" href="index.html">Home</a>
+      <a class="btn" href="menu.html">Menu</a>
+      <a class="btn" href="contact.html">Contact Us</a>
     </nav>
-    <hr>
+
     <h2> Contact Us </h2>
     <label for="name" class="require">Name **: </label>
     <input type="text" id="name" name="name"><br><br>
@@ -64,11 +68,9 @@
     <input type="submit" name="submit" value="Send Request">
 
     <footer>
-    <hr>
       <p>586 Groove Street, Jersey City, Nj, 07302</p>
       <p>Tel: 080-0919-8100</p>
     </footer>
-    <hr>
   </center>
 
   <script src="js/jquery-3.3.1.min.js"></script>

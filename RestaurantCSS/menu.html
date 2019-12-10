@@ -6,70 +6,156 @@
     <title>Home Page</title>
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="main.css" rel="stylesheet" type="text/css" />
+    <style>
+      table {
+        border: 0;
+        width:50%;
+        margin: auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+      }
+      table, th{
+        /* background-color: #473144; */
+        text-align: center;
+        /* border:2px solid #473144; */
+        padding: 5px 10px;
+      }
+      th {
+        font-size: 2em;
+        text-align: center;
+        color: #AF1B3F;
+      }
+      tr{
+        height: 30px;
+      }
+      tr:nth-child(odd) {
+        background-color: #473144;
+        color: #AF1B3F;
+      }
+      tr:nth-child(even) {
+        background-color: #AF1B3F;
+        color: #473144;
+      }
+      h2 {
+        margin: 30px;
+        font-size: 3em;
+      }
+      h4 {
+        color: red;
+      }
+    </style>
   </head>
-  <body style="background-color:lightsalmon;"><center>
-    <Header>
+  <body><center>
+    <header>
       <h1>Anime Curry</h1>
-
     </header>
-    <hr>
+
     <nav>
-      <a href="index.html">Home</a>&nbsp&nbsp&nbsp
-      <a href="menu.html">Menu</a>&nbsp&nbsp&nbsp
-      <a href="contact.html">Contact Us</a>&nbsp&nbsp&nbsp
+      <a class="btn" href="index.html">Home</a>
+      <a class="btn" href="menu.html">Menu</a>
+      <a class="btn" href="contact.html">Contact Us</a>
     </nav>
-    <hr>
     <img src="image\menupic.png" width=500>
-    <table width=500>
-      <tr>
-        <td><img src="image\curry1.png" width=200 hight=100></td>
-        <td><img src="image\curry2.png" width=200 hight=100></td>
-        <td><img src="image\curry3.jpg" width=200 hight=100></td>
-      </tr>
-      <tr>
-        <th>Stew Curry</th>
-        <th>Kutsu Curry</th>
-        <th>Veggies Curry</th>
-      </tr>
-      <tr>
-        <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
-        <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
-        <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
-      </tr>
-      <tr>
-        <td>$10.50</td>
-        <td>$12.50</td>
-        <td>$9.50</td>
-      </tr>
-      <tr>
-        <td><img src="image\curry4.png" width=200 hight=100></td>
-        <td><img src="image\curry5.jpg" width=200 hight=100></td>
-        <td><img src="image\curry6.png" width=200 hight=100></td>
-      </tr>
-      <tr>
-        <th>Fries Egg Curry</th>
-        <th>Omelette Rice</th>
-        <th>Omelette Curry</th>
-      </tr>
-      <tr>
-        <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
-        <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
-        <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
-      </tr>
-      <tr>
-        <td>$11.50</td>
-        <td>$12.50</td>
-        <td>$15.50</td>
-      </tr>
-    </table>
+    <h2> MENU </h2>
+    <div class="menu">
+    <div class="row">
+      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-sm-12">
+          <img src="image\curry1.png" class="menuPic">
+          <h3> Classic Curry </h3>
+          <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+          <h4> $12.50 </h4>
+      </div>
+      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-sm-12">
+          <img src="image\curry2.png" class="menuPic">
+          <h3> Kutsu Curry </h3>
+          <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+          <h4> $15.50 </h4>
+      </div>
+      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-sm-12">
+          <img src="image\curry3.jpg" class="menuPic">
+          <h3> Veggies Curry </h3>
+          <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+          <h4> $11.50 </h4>
+      </div>
+      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-sm-12">
+          <img src="image\curry4.png" class="menuPic">
+          <h3> Fries Egg Curry </h3>
+          <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+          <h4> $13.50 </h4>
+      </div>
+      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-sm-12">
+          <img src="image\curry5.jpg" class="menuPic">
+          <h3> Omelette Rice </h3>
+          <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+          <h4> $13.50 </h4>
+      </div>
+      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-sm-12">
+          <img src="image\curry6.png" class="menuPic">
+          <h3> Omelette Curry </h3>
+          <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+          <h4> $15.50 </h4>
+      </div>
+      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-sm-12">
+          <img src="image\curry7.jpg" class="menuPic">
+          <h3> Fries Rice Curry </h3>
+          <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+          <h4> $14.50 </h4>
+      </div>
+      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-sm-12">
+          <img src="image\curry8.png" class="menuPic">
+          <h3> Hamburger Curry </h3>
+          <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+          <h4> $15.50 </h4>
+      </div>
 
     </div>
-    <hr>
+  </div>
+
+    <table>
+      <thead>
+      <tr>
+        <th>Beverage</th>
+        <th>Price</th>
+      </tr>
+      <thead>
+      <tbody>
+      <tr>
+        <td>Green Tea</td>
+        <td>$3.50</td>
+      </tr>
+      <tr>
+        <td>Soda</td>
+        <td>$2.50</td>
+      </tr>
+      <tr>
+        <td>Water</td>
+        <td>$2.00</td>
+      </tr>
+      <tr>
+        <td>Milk Tea</td>
+        <td>$4.50</td>
+      </tr>
+      <tr>
+        <td>Coffee</td>
+        <td>$4.00</td>
+      </tr>
+    </tbody>
+    </table>
+
+
     <footer>
       <p>586 Groove Street, Jersey City, Nj, 07302</p>
       <p>Tel: 080-0919-8100</p>
     </footer>
-    <hr>
+
   </center>
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/popper.min.js"></script>

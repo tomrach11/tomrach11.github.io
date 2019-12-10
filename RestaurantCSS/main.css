@@ -12,43 +12,46 @@ header, footer{
 h1 {
   font-size: 5em;
 }
+h1, h2, h3, h4, th, nav, footer{
+  font-family: 'Bubblegum Sans', cursive;
+}
+/* Start nav */
 nav {
   background-color: #473144;
   border-top: 2px solid;
   border-bottom: 2px solid;
   border-color: #AF1B3F;
+  margin-bottom: 20px;
 }
-nav a {
+.btn {
+  width: 120px;
+}
+nav .btn {
+  font-size: 1.5em;
   border: 2px solid #AF1B3F;
   color: #AF1B3F;
   margin: 10px;
 }
-nav a:hover {
+nav .btn:hover {
   background-color: #AF1B3F;
   color: #473144;
-  border-color: black;
+  border: 2px solid black;
 }
-nav a:visited {
+nav .btn:visited {
   color: black;
   background-color: blue;
 }
 nav a:active {
   text-decoration: underline;
 }
-
-
-
-
-th {
-  font-size: 1.5em;
-  text-align: center;
+/* End nav */
+/* Start Menu */
+.menu {
+  margin: 30px;
+  padding: 0px 50px;
 }
-h1, th {
-  font-family: 'Bubblegum Sans', cursive;
+.menuPic {
+  width: 250px;
+  margin-bottom: 10px;
 }
-.require {
-  font-weight: bold;
-}
-nav a {
-
-}
+/* End Menu */
