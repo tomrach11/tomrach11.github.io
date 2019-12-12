@@ -1,0 +1,143 @@
+/* Start Ediiting Main Elements */
+body {
+  background-color: #FBF9F8;
+  font-family: arial, helvetica, sans-serif;
+  color: #808080;
+  max-width: 950px;
+  margin: 0 auto;
+}
+header, footer {
+  background-color: #34ADD5;
+  color: #FBF9F8;
+  height: 100px;
+  text-align: center;
+  padding: 30px 10px 20px 10px;
+}
+h1 {
+  font-size: 2.5em;
+}
+nav {
+  border-top: 3px dashed #34ADD5;
+  border-bottom: 3px dashed #34ADD5;
+  margin-top: 4px;
+}
+/* End Editting Main Elements */
+
+/* Start Editting nav */
+nav a {
+  background: #34ADD5;
+  color: #FBF9F8;
+  padding: 8px;
+  border: thin solid #FBF9F8;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  margin: 20px;
+  width: 100px;
+  float: left;
+}
+nav a:visited {
+  color: #808080;
+}
+nav a:hover {
+  background-color: #A3E2E5;
+  color: #808080;
+}
+nav a:active {
+  font-weight: bold;
+}
+/* End Editting nav */
+
+/* Start Editting Article */
+article {
+  margin-bottom: 16px;
+}
+article img {
+  float: left;
+  width: 350px;
+  margin-right: 20px;
+}
+.clearFloat {
+  clear: both;
+}
+.rightContent {
+  float:left;
+}
+/* End Editting Article*/
+
+/*   Start Editting Tabel    */
+caption {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-bottom: 8px;
+}
+table, th, td {
+  border: 1px solid #8ECAD4;
+  border-collapse: collapse;
+  padding: 5px 10px;
+}
+table {
+  width:90%;
+  margin: auto;
+}
+tr{
+  height: 30px;
+}
+th{
+  background: #34ADD5;
+  color: #FBF9F8;
+}
+tr:nth-child(odd) {
+  background-color: #92B0DE;
+}
+/* End Editting Tabel */
+
+/* Start Editting Form */
+label, fieldset {
+  font-size: 1.1em;
+}
+input[type=text] {
+  border: 2px solid #8ECAD4;
+  width: 50%;
+  padding: 8px 8px;
+  margin: 12px 0;
+  box-sizing: border-box;
+}
+fieldset {
+  background-color: #A3E2E5;
+  width: 100%;
+  padding: 12px 0;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: 2px solid #808080;
+}
+select, textarea {
+  margin: 12px 0;
+  font-size: 1em;
+}
+input[type=submit] {
+  font-size: 1.2em;
+  background-color: #34ADD5;
+  color: #FBF9F8;
+  padding: 4px 8px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+input[type=submit]:hover {
+  background-color: #A3E2E5;
+  color: #808080;
+}
+textarea{
+  width: 50%;
+  height: 200px;
+  padding: 12px 20px;
+  margin: 12px 0;
+  box-sizing: border-box;
+  border: 2px solid #808080;
+  border-radius: 4px;
+  background-color: #A3E2E5;
+  resize: none;
+  color: #808080;
+}
+
+/* End Editting Form */
