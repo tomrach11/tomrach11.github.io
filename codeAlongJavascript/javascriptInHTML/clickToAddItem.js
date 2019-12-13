@@ -1,11 +1,9 @@
-function clearErrors(){
-  
-}
-
-function resetForm(){
-
-}
-
-function validateForm(){
-
+function clearErrors() {
+  for (var loopCounter = 0;
+  loppCounter < document.forms["numberFun"].elements.length;
+  loopCounter++) {
+    if (document.forms["numberFun"].elements[loopCounter].parentElement.className.indexOf("has") != -1) {
+      document.forms["numberFun"].elements[loopCounter].parentElement.className = "form-group";
+    }
+  }
 }
