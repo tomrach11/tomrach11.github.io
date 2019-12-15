@@ -9,7 +9,7 @@
 <body>
   <div class="container">
     <h1>Click to Add Items</h1>
-    <form name="numberFun" onsibmit="return validateItems();" onreset="resetForm"; class="form-inline">
+    <form name="numberFun" onsubmit="return validateItems();" onreset="resetForm()"; class="form-inline">
     <!-- Textbox -->
       <div class="form-group">
         <label for="num1">Number 1</label>
@@ -17,7 +17,7 @@
       </div>
       <div class="form-group">
         <label for="num2">Number 2</label>
-        <inut type="number" class="form-control" id="num1">
+        <input type="number" class="form-control" id="num2">
       </div>
     <!-- Button -->
       <button type="submit" id="submitButton" class="btn btn-default"> Submit </button>
@@ -41,7 +41,7 @@
         </tr>
         <tr>
           <td>Multiplication (*)</td>
-          <td><span id="subtractResult"></span></td>
+          <td><span id="multiplyResult"></span></td>
         </tr>
         <tr>
           <td>Division (/)</td>
