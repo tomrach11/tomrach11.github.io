@@ -1,6 +1,3 @@
-
-
-
 function play(){
   var bet = Number(document.getElementById("money").value);
   var rollCount = 0;
@@ -23,11 +20,13 @@ function play(){
       rollCount += 1;
     }
   }
-  document.getElementById("displayResult").style.display = "block";
-  document.getElementById("startingBet").innerText = bet;
-  document.getElementById("rollCount").innerText = rollCount;
-  document.getElementById("highest").innerText = highest;
-  document.getElementById("rollCountAmountWon").innerText = rollCountAmountWon;
+  if (validate(bet)) {
+    document.getElementById("displayResult").style.display = "block";
+    document.getElementById("startingBet").innerText = bet;
+    document.getElementById("rollCount").innerText = rollCount;
+    document.getElementById("highest").innerText = highest;
+    document.getElementById("rollCountAmountWon").innerText = rollCountAmountWon;
+  }
   console.log(rollCount);
   console.log(rollCountAmountWon);
   console.log(highest);
@@ -36,8 +35,11 @@ function play(){
 
 function validate(bet) {
   if (bet < 1) {
+    document.getElementById("displayResult").style.display = "none";
     alert("Please bet more than 1$");
+    return false;
   }
+  return true;
 }
 function rollDice() {
   return Math.ceil(Math.random()*6);
