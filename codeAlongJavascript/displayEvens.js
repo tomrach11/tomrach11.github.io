@@ -12,9 +12,7 @@
 // console.log(arr);
 
 //start function
-
 function results() {
-  // validate()
   console.log("entering function");
   var start = Number(document.getElementById("start").value);
   var end = Number(document.getElementById("end").value);
@@ -22,7 +20,7 @@ function results() {
 
   for (var i = start; i <= end; i += step) {
     if (i % 2 == 0) {
-      document.getElementById("showResult").innerText += i + "<br />";
+      document.getElementById("showResult").innerHTML += i + "<br>";
     }
   }
   document.getElementById("startNum").innerText = start;
@@ -46,7 +44,7 @@ function validate() {
   else if (step <= 0) {
     alert("Step has to be more than 0");
     document.getElementById("step").value = "";
-    document.getElementById("step").focus;
+    document.getElementById("step").focus();
   }
   else if (end <= start) {
     alert("Ending Number Has to be greater than starting number");
