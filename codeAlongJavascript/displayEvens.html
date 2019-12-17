@@ -7,7 +7,7 @@
 </head>
 <body>
   <h1>Sample</h1>
-  <form id="inputNumber"  class="form-inline" onsubmit="return results()">
+  <form id="inputNumber"  class="form-inline" onsubmit="return validate()">
     <div class="form-group">
       <label for="start">Starting Number</label>
       <input type="number" class="form-control" id="start">
@@ -20,9 +20,9 @@
       <label for="step">Step</label>
       <input type="number" class="form-control" id="step">
     </div>
-    <button type="submit" id="displayResult" class="btn btn-default"> Display Results </button>
+    <button type="submit" id="submitButton" class="btn btn-default"> Display Results </button>
   </form>
-  <div id="displayResult" style="display:block;">
+  <div id="displayResult" style="display:none;">
     <p> Here are the Even numbers between
       <span id="startNum"></span> and
       <span id="endNum"></span> by
@@ -34,7 +34,7 @@
 
   </div>
 
-  <script type="text/JavaScript" src="displayEvents.js">
+  <script type="text/JavaScript" src="displayEvens.js">
   </script>
 
 
