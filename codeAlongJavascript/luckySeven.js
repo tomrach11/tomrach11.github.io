@@ -42,5 +42,5 @@ function validate(bet) {
   return true;
 }
 function rollDice() {
-  return Math.ceil(Math.random()*6);
+  return Math.floor(Math.random()*6+1);
 }
