@@ -21,7 +21,7 @@ h1 {
   font-size: 5em;
   text-shadow: -1px 0 #AF1B3F, 0 1px #AF1B3F, 1px 0 #AF1B3F, 0 -1px #AF1B3F;
 }
-h1, h2, h3, h4, th, nav, footer{
+h1, h2, h3, h4, h6, th, nav, footer{
   font-family: 'Bubblegum Sans', cursive;
 }
 /* Start nav */
@@ -32,7 +32,7 @@ nav {
   border-color: #AF1B3F;
   margin-bottom: 20px;
 }
-.btn {
+nav .btn {
   width: 120px;
 }
 nav .bnt:active {
@@ -55,6 +55,16 @@ nav .btn:hover {
   border: 2px solid black;
 }
 /* End nav */
+
+#top1 {
+    top: 0;
+    right: auto;
+    left: 20px;
+}
+#top2 {
+  top: 0;
+  bottom: auto;
+}
 /* Start Menu */
 .menu {
   margin: 30px;
